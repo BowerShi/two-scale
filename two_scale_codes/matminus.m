@@ -1,0 +1,12 @@
+function vector=matminus(vector)
+    size_vector = size(vector);
+    for i=1:size_vector(1)
+        for j=1:size_vector(2)
+            if vector(i,j)<0
+                vector(i,j)=-vector(i,j);
+            else
+                vector(i,j)=0;
+            end  
+        end
+    end
+end
