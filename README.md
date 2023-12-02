@@ -1,4 +1,4 @@
-# Two-scale Scheme for the  Monge-Amp\`ere Equation 
+# Two-scale Scheme for the  Monge-Ampere Equation 
 ## Final project @ Finite Difference Methods II (差分方法II) at Peking University.
 
 Codes include functions and 4 .mlx files which implement the monotone operator(two\_scale\_newton.mlx and tow\_scale\_perron.mlx), accurate operator(two\_scale\_accurate.mlx) and filter scheme(two\_scale\_filter.mlx).
@@ -7,10 +7,10 @@ Codes include functions and 4 .mlx files which implement the monotone operator(t
 We consider the Monge-Ampère equation with Dirichlet boundary condition:
 
 $$
-\begin{aligned}
-\operatorname{det} D^2 u & = f \quad \text{in} \quad \Omega \subset \mathbb{R}^d, \\
-u & = g \quad \text{on} \quad \partial \Omega
-\end{aligned}
+\begin{cases}
+\det D^2 u = f & \text{in } \Omega \subset \mathbb{R}^d, \\
+u = g & \text{on } \partial \Omega
+\end{cases}
 $$
 
 where \(\Omega\) is a uniformly convex domain and \(f \geq 0\) and \(g\) are uniformly continuous functions. We seek a convex solution \(u\), which is critical for the upper equation to be elliptic and have a unique viscosity solution.
@@ -18,10 +18,12 @@ where \(\Omega\) is a uniformly convex domain and \(f \geq 0\) and \(g\) are uni
 If we rewrite the determinant of \(D^2u\) into
 
 $$
-\operatorname{det} D^2 w(x) = \min_{\boldsymbol{v} \in \mathbb{S}^{\perp}} \prod_{j=1}^d v_j^T D^2 w(x) v_j
+\det D^2 w(x) = \min_{\boldsymbol{v} \in \mathbb{S}^{\perp}} \prod_{j=1}^d v_j^T D^2 w(x) v_j
 $$
 
-where \(\mathbb{S}^{\perp}\) is the set of all \(d\)-orthonormal bases \(\boldsymbol{v} = (v_j)_{j=1}^d, v_j \in \mathbb{R}^d\). The minimum here is achieved by the eigenvectors of \(D^2 w(x)\) and is equal to the product of the respective eigenvalues. We can discretize the above formula in various ways, employing different polynomial spaces and approximations for the directional derivatives given by \(v_j^T D^2 w v_j\). These choices lead to schemes with different theoretical properties and levels of accuracy. Based on the discretization of the above shcems, we implement the two scale methods given in the following references.
+where \(\mathbb{S}^{\perp}\) is the set of all \(d\)-orthonormal bases \(\boldsymbol{v} = (v_j)_{j=1}^d, v_j \in \mathbb{R}^d\). The minimum here is achieved by the eigenvectors of \(D^2 w(x)\) and is equal to the product of the respective eigenvalues. We can discretize the above formula in various ways, employing different polynomial spaces and approximations for the directional derivatives given by \(v_j^T D^2 w v_j\). These choices lead to schemes with different theoretical properties and levels of accuracy.
+
+Based on the discretization of the above shcems, we implement the two scale methods given in the following references.
 
 ### References
 
