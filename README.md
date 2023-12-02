@@ -13,7 +13,7 @@ u = g & \text{on } \partial \Omega
 \end{cases}
 $$
 
-where $ \Omega $ is a uniformly convex domain and $f \geq 0$ and $g$ are uniformly continuous functions. We seek a convex solution $u$, which is critical for the upper equation to be elliptic and have a unique viscosity solution.
+where $\Omega$ is a uniformly convex domain and $f\geq 0$ and $g$ are uniformly continuous functions. We seek a convex solution $u$, which is critical for the upper equation to be elliptic and have a unique viscosity solution.
 
 If we rewrite the determinant of $D^2u$ into
 
