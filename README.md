@@ -1,4 +1,4 @@
-# Two-scale Scheme for the  Monge-Ampere Equation 
+# Two-scale Scheme for the  Monge-Ampère Equation 
 ## Final project @ Finite Difference Methods II (差分方法II) at Peking University.
 
 Codes include functions and 4 .mlx files which implement the monotone operator(two\_scale\_newton.mlx and tow\_scale\_perron.mlx), accurate operator(two\_scale\_accurate.mlx) and filter scheme(two\_scale\_filter.mlx).
