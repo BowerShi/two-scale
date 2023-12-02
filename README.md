@@ -13,15 +13,15 @@ u = g & \text{on } \partial \Omega
 \end{cases}
 $$
 
-where \(\Omega\) is a uniformly convex domain and \(f \geq 0\) and \(g\) are uniformly continuous functions. We seek a convex solution \(u\), which is critical for the upper equation to be elliptic and have a unique viscosity solution.
+where $\Omega$ is a uniformly convex domain and $f \geq 0$ and $g$ are uniformly continuous functions. We seek a convex solution $u$, which is critical for the upper equation to be elliptic and have a unique viscosity solution.
 
-If we rewrite the determinant of \(D^2u\) into
+If we rewrite the determinant of $D^2u$ into
 
 $$
 \det D^2 w(x) = \min_{\boldsymbol{v} \in \mathbb{S}^{\perp}} \prod_{j=1}^d v_j^T D^2 w(x) v_j
 $$
 
-where \(\mathbb{S}^{\perp}\) is the set of all \(d\)-orthonormal bases \(\boldsymbol{v} = (v_j)_{j=1}^d, v_j \in \mathbb{R}^d\). The minimum here is achieved by the eigenvectors of \(D^2 w(x)\) and is equal to the product of the respective eigenvalues. We can discretize the above formula in various ways, employing different polynomial spaces and approximations for the directional derivatives given by \(v_j^T D^2 w v_j\). These choices lead to schemes with different theoretical properties and levels of accuracy.
+where $\mathbb{S}^{\perp}$ is the set of all d-orthonormal bases $\boldsymbol{v} = (v_j)_{j=1}^d, v_j \in \mathbb{R}^d$. The minimum here is achieved by the eigenvectors of $D^2 w(x)$ and is equal to the product of the respective eigenvalues. We can discretize the above formula in various ways, employing different polynomial spaces and approximations for the directional derivatives given by $v_j^T D^2 w v_j$. These choices lead to schemes with different theoretical properties and levels of accuracy.
 
 Based on the discretization of the above shcems, we implement the two scale methods given in the following references.
 
