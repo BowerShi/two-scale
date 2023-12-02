@@ -23,7 +23,7 @@ $$
 
 where $\mathbb{S}^{\perp}$ is the set of all d-orthonormal bases $\boldsymbol{v} = (v_j)_{j=1}^d, v_j \in \mathbb{R}^d$. The minimum here is achieved by the eigenvectors of $D^2 w(x)$ and is equal to the product of the respective eigenvalues. We can discretize the above formula in various ways, employing different polynomial spaces and approximations for the directional derivatives given by $v_j^T D^2 w v_j$. These choices lead to schemes with different theoretical properties and levels of accuracy.
 
-Based on the discretization of the above shcemes, we implement the two scale methods given in the following references.
+Based on the discretization of the above shcemes, we implement the two scale methods given in the following references. See the report for more details.
 
 ### References
 
